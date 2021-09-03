@@ -13,12 +13,60 @@
 var ans=parseInt(inp1)+parseInt(inp2);
                 alert(ans);
             }
+
+            function AcceptData() {
+         var firstname=document.getElementById("fstname").value;
+         localStorage.setItem("fname",firstname);
+         var lastname=document.getElementById("lname").value;
+         localStorage.setItem("lname",lastname);
+         
+        //  console.log(firstname);
+        //  console.log(lastname);
+         
+
+            }
+
+
+            function DisplayData() {
+                var d1=localStorage.getItem("fname");
+                var d2=localStorage.getItem("lname");
+                alert(d1);
+                alert(d2);
+            }
+
+            function  StoreData() {
+                var firstname=document.getElementById("fstname").value;
+                sessionStorage.setItem("fname",firstname);
+                var lastname=document.getElementById("lname").value;
+                sessionStorage.setItem("lname",lastname);
+
+            }
+
+            function ShowData()
+            {
+alert(sessionStorage.getItem("fname"));
+alert(sessionStorage.getItem("lname"));
+            }
         </script>
     </head>
 
-    <body onload="fun1()">
-        <form>
-            <input type="submit" value="Submit">
+    <body>
+        <form method="POST">
+                   
+                <label class="type1" for="firstname">Enter First Name</label>
+                <input  style="background-color: chartreuse;"
+                 class="type1" type="text"  name="fname" 
+                 id="fstname" required maxlength="5" autofocus />
+            <br/>
+                <label  class="type1" for="lastname">Enter Lastname</label>
+            <input class="type1" type="text" 
+            id="lname" required maxlength="5">
+       <br/>
+       <!-- <input type="submit"  value="Submit data" onclick="AcceptData()"/>
+       <input type="submit"  value="display data" onclick="DisplayData()"/> -->
+       <input type="submit" value="Submit Data" onclick="StoreData()"/>
+       <input type="button" value="Show Data" onclick="ShowData()"/>
+
         </form>
     </body>
 </html>
