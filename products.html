@@ -2,8 +2,23 @@
 <html>
     <head>
         <title>products Page</title>
+        <script>
+            function fun1()
+            {
+                // var i="hello";
+                // alert(i);
+
+                var inp1=prompt("Enter number");
+                var inp2=prompt("Enetr second number");
+var ans=parseInt(inp1)+parseInt(inp2);
+                alert(ans);
+            }
+        </script>
     </head>
-    <body>
-        <h1>this is products page</h1>
+
+    <body onload="fun1()">
+        <form>
+            <input type="submit" value="Submit">
+        </form>
     </body>
 </html>
