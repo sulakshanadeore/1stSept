@@ -2,40 +2,90 @@
 <html>
     <head>
         <title>contact Page</title>
+<style>
+label{
+    font: 14px Arial;
+    
+}
+input
+{
+background-color: turquoise;
 
+
+}
+
+
+
+#fstname
+{
+
+    background-color: yellow;
+    color: tomato;
+
+}
+td{
+
+    padding: 20px;
+}
+
+form
+{
+
+
+    background-color: yellowgreen;
+}
+
+.type1
+{
+background-color: brown;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-style: normal;
+    font-display:2em;
+    
+}
+
+
+</style>
+<link rel="stylesheet" href="style1.css">
     </head>
     <body>
         <form>
             <fieldset>
                 <legend>Personal Info</legend>
-        <table>
+        <table style="border-width: 4px; 
+        border-style:solid;
+        border-color:
+         green red yellow violet; ">
+
             
             <tr>
-                <td><label for="firstname">Enter First Name</label></td>
-                <td><input type="text" name="fname" id="fstname" required maxlength="5" /></td>
+                <td><label class="type1" for="firstname">Enter First Name</label></td>
+                <td><input  style="background-color: chartreuse;" class="type1" type="text"  name="fname" id="fstname" required maxlength="5" autofocus /></td>
             </tr>
             <tr>
                 <td>
-                <label for="lastname">Enter Lastname</label>
+                <label  class="type1" for="lastname">Enter Lastname</label>
             </td>
-                <td><input type="text" id="lname" required maxlength="5"></td>
+                <td><input class="type1" type="text" id="lname" required maxlength="5"></td>
             </tr>
             <tr>
 <td>
-    <label for="age">Enter age</label>
+    <label class="type1" for="age" >Enter age</label>
 </td>
 <td>
-    <input type="number" id="uage">
+    <input class="type1" type="number" id="uage">
 </td>
 
             </tr>
             <tr>
-            <td><label for="email">Enter Email id</label></td>
-                <td><input type="email" id="useremail"></td>
+            <td><label class="type1" for="email">Enter Email id</label></td>
+                <td><input class="type1" type="email" id="useremail"></td>
             </tr>
             <tr>
                 <td>
-                    <label for="city">Enter city</label>
+                    <label class="type1" for="city">Enter city</label>
                 </td>
                 <td>
                     <input type="text" id="useremail">
@@ -43,15 +93,15 @@
             </tr>
             <tr>
                 <td>
-            <label for="bdate">Select Date</label>
+            <label class="type1" for="bdate">Select Date</label>
         </td>
         <td>
-                <input type="date" name="bdate" id="birdate">
+                <input class="type1" type="date" name="bdate" id="birdate">
             </td>
             </tr>
 <tr>
-            <td><label for="week">Select week</label></td>
-            <td><input type="week" name="" id="wk"></td>
+            <td><label class="type1" for="week">Select week</label></td>
+            <td><input class="type1" type="week" name="" id="wk"></td>
             
         </tr>
             
