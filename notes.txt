@@ -1,0 +1,43 @@
+﻿Can we declare a non static variable in a static method?
+Yes
+-----------------------------------------------------------
+CAn we declare a static variable in a static method?
+No
+------------------------------------------------------------
+Can we declare a  static variable in a class?
+Yes
+------------------------------------------------------------------
+Can I access static varibale in static method?
+Yes
+-------------------------------------------------------------------
+How Can I access static varibale in static method?
+classname.variablename
+variablename
+----------------------------------------------
+Diff between static variable & non static variable?
+1) Declaration--- static can be declared in class, non static in method as well
+2) Access------static can be accessed in class & method , non static can be accessed 
+only in that method.
+--------------------------------------------------
+Use Static ---- It is used when u want to remember the previous value for futher processing.
+Only single copy of that variable exists in the memory so that memory location itself gets
+updated everytime u make any change to the variable value.
+
+If u declare a non-static variable with the same name as static variable, while
+accessing it reference of the variable is needed, to tell the compiler whether u r accessing static
+or non static.
+To access static in this case u need to write Classname.variablename
+-----------------------------------------------------------------
+-------------------------------------------------------------------
+*******************************************************************************************
+Static Methods:
+1) No need to call with object, its directly accessible if it is in the same class
+ or even if it is in different class, just class reference is enough.
+ --------------------------------------------------------------------------------------
+ public--- accessible internally and outside the project as well, whereever referenced.
+ Protected means only accessible in the same class.
+ internal means accessible to all the class in the same project.
+ protected internal ---> accessible in the same class. + to all the class in the same project.
+ private-----accessible to  only methods of the same class
+
+ 
