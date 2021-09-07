@@ -1,0 +1,16 @@
+﻿Inheritance
+--------------
+inherits--> :
+Base Class/Parent----Person
+Derived Class/Child---Employee
+-----------------------------
+Try the following:
+
+Products
+ElectronicsProducts:Products
+ElectricalProducts:Products
+
+HardwareProducts:ElectronicsProducts
+SoftwareProducts:Products
+
+HardwareAccessories:ElectricalProducts
