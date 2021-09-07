@@ -1,0 +1,77 @@
+﻿Object Oriented Programming
+-----------------------------
+Real world entities n programming to handle data and code efficiently.
+
+Objects ---data and code--fields,variables----that hold value.
+
+Major Pillars---
+1)Abstraction-------
+data hiding-----how it works is hidden from the user
+not needed to be known by you is data hiding---
+
+
+2)Encapsulation----binding data and functions----keep the data and the code secure
+3)Inheritance----reusability of code-----
+	single level---1 parent-- 1child--- child inherits from parent
+	-----------------------------------------------
+	multiple 
+
+	GRandGrandParent
+	GrandParent
+	Parent: GrandGrandParent,GrandParent
+
+
+
+
+	-----------------------------------------------------
+	multi-leve1
+	GrandGrandParent
+
+	 GrandParent:GrantGrandParent
+
+	Parent---grand parent
+
+	child---Parent
+
+	----------------------------------------------------
+
+	Hierarchical
+	Parent---Msg
+
+	c1---PhotoMsg
+	c2----VideoMsg
+	c3----AudioMsg + VideoMsg
+
+	---------------------------------
+
+4)Polymorphism-Poly means many--- many forms
+1) Single class/scope
+Overloading----different signatures in the same class with same name of the method 
+with different number,sequence and types of parameters. Return type NOT considered.
+
+
+2) Multiple classes/scope by using INHERITANCE----
+OverRiding---- same signature of the method as in the base/parent class.
+
+
+-------------------------------------------------------
+Minor Pillars----
+1)Persistence ---- Saving or storing data for future use
+2)Strong Type casting------objects of different type may not be interchanged.
+3)concurrency---performing several tasks simultaneously or parallelly.
+-----------------------------------------------------------------------
+
+Class--- blue print of your entity.
+Object---- instance of the class, which is the replica of the class methods to call
+them via objects with parameters.
+Constructor---- creates the object of the class so that methods could be called 
+using the object instance.
+-------------------------------------------------------------
+
+1) Build Library
+2) Reference library in the app
+3) set app as startup project
+4) add "using" in the app ----- using OOPsLibrary;
+5) Create a object of the class using default constructor
+
+
