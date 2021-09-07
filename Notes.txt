@@ -1,77 +1,67 @@
-﻿Object Oriented Programming
------------------------------
-Real world entities n programming to handle data and code efficiently.
+﻿Properties
+-----------
 
-Objects ---data and code--fields,variables----that hold value.
+Properties are used for providing a way to expose the private fields.
+Special/smart methods which are called as accessors----get & set accessor & doesnot have parameters
 
-Major Pillars---
-1)Abstraction-------
-data hiding-----how it works is hidden from the user
-not needed to be known by you is data hiding---
+set is used to assign the value
+get is used to return the value
 
-
-2)Encapsulation----binding data and functions----keep the data and the code secure
-3)Inheritance----reusability of code-----
-	single level---1 parent-- 1child--- child inherits from parent
-	-----------------------------------------------
-	multiple 
-
-	GRandGrandParent
-	GrandParent
-	Parent: GrandGrandParent,GrandParent
+Accept
+Display
+Validate
+Access Specifier with the data
 
 
 
 
-	-----------------------------------------------------
-	multi-leve1
-	GrandGrandParent
-
-	 GrandParent:GrantGrandParent
-
-	Parent---grand parent
-
-	child---Parent
-
-	----------------------------------------------------
-
-	Hierarchical
-	Parent---Msg
-
-	c1---PhotoMsg
-	c2----VideoMsg
-	c3----AudioMsg + VideoMsg
-
-	---------------------------------
-
-4)Polymorphism-Poly means many--- many forms
-1) Single class/scope
-Overloading----different signatures in the same class with same name of the method 
-with different number,sequence and types of parameters. Return type NOT considered.
+---------------------------------------------
 
 
-2) Multiple classes/scope by using INHERITANCE----
-OverRiding---- same signature of the method as in the base/parent class.
 
 
--------------------------------------------------------
-Minor Pillars----
-1)Persistence ---- Saving or storing data for future use
-2)Strong Type casting------objects of different type may not be interchanged.
-3)concurrency---performing several tasks simultaneously or parallelly.
------------------------------------------------------------------------
+1 Supplier----- M Products
+1:M
+--------------------------------------------
+Supplier
+Supplid Name city State Country.....
 
-Class--- blue print of your entity.
-Object---- instance of the class, which is the replica of the class methods to call
-them via objects with parameters.
-Constructor---- creates the object of the class so that methods could be called 
-using the object instance.
--------------------------------------------------------------
+1		S1.....................
+2		S2.......................
 
-1) Build Library
-2) Reference library in the app
-3) set app as startup project
-4) add "using" in the app ----- using OOPsLibrary;
-5) Create a object of the class using default constructor
+
+--------------------------------------------------
+Products is given by supplier
+ProductsData
+
+ProductID  ProdName Description UOM     UnitPrice Supplier_ID
+--------------------------------------------------------------
+
+ 1			A			aa		Dozens     5	    1
+ 2			B			bb		Dozens     6	    1
+ 3			C			cc		Per unit   15	    1
+
+ 4			A			aa		Dozens     5	    2
+
+ ----------------------------------------------------------
+
+
+ List of Products given by SupplierID 1
+ ---------------------------------------
+ 1			A			aa		Dozens     5	    1
+ 2			B			bb		Dozens     6	    1
+ 3			C			cc		Per unit   15	    1
+ ---------------------------------------------------------------
+
+
+ List of Products given by SupplierID 2
+ 4			A			aa		Dozens     5	    2
+
+
+
+
+
+
+
 
 
