@@ -14,3 +14,184 @@ HardwareProducts:ElectronicsProducts
 SoftwareProducts:Products
 
 HardwareAccessories:ElectricalProducts
+-----------------------------------------------------------------
+
+Interfaces vs Abstract Classes
+------------------------------
+Interface are meant contract, interfaces are also meant for inheritance.
+Interfaces can also have access specifier.
+But members of the interface cannot have access specifier.
+
+Abstract Class are meant for inheritance, abstract classes can have access 
+specifiers
+Abstract Class members can have access specifier.
+
+Interfaces all methods/members are abstract.
+In abstract class atleast one member needs to be abstract.
+
+A abstract class can inherit from interface.
+But interface cannot inherit a class, it can inherit only interfaces.
+--------------------------------------------------------------------------
+some service provider
+
+Class Plan99:Plans
+{
+public int TalkTime(){}
+public int Validity(){}
+}
+
+plan 199 :Plans
+{
+public int TalkTime(){}
+public int Validity(){}
+public float DataPack(){}
+public int sms(){}
+}
+
+Plan 299:Plans
+{
+public int TalkTime(){}
+public int Validity(){}
+public float DataPack(){}
+public int sms(){}
+public int Roaming(){}
+}
+
+Plan 399:Plans
+{
+public int TalkTime(){
+100;
+
+}
+public int Validity(){
+60
+}
+public float DataPack(){
+
+3 gb
+}
+public int sms(){
+1000
+}
+public int Roaming(){
+200
+
+}
+public int International(){
+50
+
+}
+
+}
+
+--------------------------------------------------------
+
+Talktime + Validity + data pack + sms
+
+
+public interface Plans
+{
+ int TalkTime();
+ int Validity();
+ float DataPack();
+int sms();
+int Roaming();
+ int International();
+
+}
+------------------------------------------------------------
+ServiceOriented Architecture
+----------------------------
+public interface ICalculator
+{
+add
+sub
+mul
+div
+per
+modulo
+sin
+cos
+tan
+theta
+pi
+mtrToCmConversion
+.
+.
+.
+}
+
+App-StdCalci===100
+class StdCalci:ICalculator
+{
+add
+sub
+mul
+div
+per
+}
+
+
+
+App-Scienti=200
+class ScientificCalci:ICalculator
+{
+sin
+cos
+tan
+theta
+pi
+}
+
+App-Number1=300
+class AllInOneCalci:ICalculator
+{
+add
+sub
+mul
+div
+per
+modulo
+sin
+cos
+tan
+theta
+pi
+mtrToCmConversion
+.
+.
+.
+}
+
+
+customCalci:ICalculator
+{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
