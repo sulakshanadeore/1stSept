@@ -79,7 +79,7 @@ namespace InheritancePolyDemo
         public sealed override void CalculateSalary(float bs, int ta, int da)
         {
             double s1 = (bs + ta + da) + 1000;
-            base.Salary = s1;
+            Salary = s1;
             Console.WriteLine("Super manager class");
         }
     }
