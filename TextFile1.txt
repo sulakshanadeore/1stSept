@@ -1,0 +1,31 @@
+﻿Delegates
+----------
+
+Type safe function pointer
+method signature must match the delegate.
+Delegate is reference type.
+
+Uses:
+1) Event Handling
+2) Multi-threading
+3) LINQ--- Lambda 
+
+Types:
+1) Unicast----- a delegate that points to a single method/function
+	Unicast delegate return type can be primitive type.
+
+2) Multicast----a delegate that points to multiple methods.
+	Multicast delegate return type is always void.
+
+
+Declaration of Delegate:
+
+1) Inside the class-----  u have to call it via the object of the class 
+
+2) Outside the class---- u can use that delegate in the whole namespace 
+and directly create object of the delegate without creating object of the class.
+-----------------------------------------------------------------------------
+
+
+Event--- Notification to the object for the invocation.
+
