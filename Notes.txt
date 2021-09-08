@@ -1,0 +1,21 @@
+﻿collections
+-----------
+1) Arrays
+2) Generic & NonGeneric
+------------------------------------------
+Non-Generic---- using System.Collections;
+ArrayList ------- nongeneric---ints,floats,double,string,char,etc
+casting is needed
+
+----------------------------------------------
+Generics----using System.Collections.Generics;
+
+It achieves type safety
+casting is avoided/removed
+
+
+List--particular type---
+List<int> ---- ints
+List<string>---strings
+List<Employee>---- employee
+
