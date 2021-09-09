@@ -1,0 +1,33 @@
+﻿Serialization
+--------------
+It is a process of writing object to a file ---serialization
+It is a process of reading object from a file --- Deserialization
+
+
+Transfer the (object)data --- to the other user.
+
+
+Types of Serialization
+
+1) Binary----- using System.Runtime.Serialization.Formatters.Binary
+				BinaryFormatter---- Serialize(),Deserialize()
+					-------NonSerialized---- must not be serialized to
+					the file.
+
+2) XML ------using System.Xml.Serialization
+				XmlSerialiazer---- Serialize(),Deserialize()
+
+				------public property --- 
+
+3) Json
+Tools--> Nuget Package Manager---> Manager Nuget Packages for Solution
+Browse--- Json.NET---- Install
+
+------------------------------------
+Steps:
+------
+
+1) create class-- prop, etc
+2) [Serializable()]------ allows the class to be serializable
+3)FileStream------- path,Mode,Access
+
