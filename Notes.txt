@@ -1,0 +1,27 @@
+﻿Exception Handling
+===================
+
+exception ---rare situation----runtime
+error-- compile time----
+
+
+Structured Exception Handling
+
+
+try
+{
+int ans=i/j;
+		10/0---- DivideByZeroException
+}
+catch(Exception ex)//all types of exceptions
+{
+//user friendly message
+}
+finally
+{
+close the connections,dispose objects etc
+}
+
+----------------------------
+Exception-- Base Class for all types of Exception
+	Application & System Defined Exceptions
