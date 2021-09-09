@@ -1,0 +1,46 @@
+File Handling
+
+File---- stream of bytes created for editing,updating of info.
+
+2 types
+1) Sequential ------ classic ---- .txt
+2) Random----- record
+
+using System.IO;
+
+Classes--- Static Methods --- no need to create object of class to 
+utilize the functionality of the methods.
+
+
+Instance ---- creation of object needed.
+
+-----------------------------------------------------------------------
+
+File--- Static Methods
+Directory -----Static Methods
+
+FileInfo----- NonStatic Methods
+DirectoryInfo---NonStatic Methods
+
+FileStream---- NonStatic Methods
+
+
+BinaryReader---- NonStatic Methods
+BinaryWriter=---NonStatic Methods
+
+
+StreamReader----NonStatic Methods
+StreamWriter-----NonStatic Methods
+---------------------------------------------------------------------
+
+				Text			Binary
+FileStream--p,Mode,Access        yes			yes
+=========================
+StreamWriter	                 yes			null
+StreamReader			 yes			null
+
+BinaryWriter			null			yes
+BinaryReader			null			yes
+
+
+
